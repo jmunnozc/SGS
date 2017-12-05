@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     //TextView txtmensaje;
 
     ListView lista;
-    ConnectionDB db;
     List<String> item = null;
 
     @Override
@@ -34,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
         manager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 
         //grabarOrden();
-        lista = (ListView) findViewById(R.id.listview_lista);
-        //mostrarOrden();
+
     }
 
     private void grabarOrden() {
@@ -46,27 +44,6 @@ public class MainActivity extends AppCompatActivity {
         db.addOrden("OI-1286","ORDEN INSPECCIÓN Nro 1286 - CERTIFICACIONES");
         db.addOrden("OI-1296","ORDEN INSPECCIÓN Nro 1296 - PRUEBAS DE ENSAYO");*/
     }
-
-    private void mostrarOrden() {
-        db = new ConnectionDB(this);
-        Cursor c = db.getOrden();
-        item = new ArrayList<String>();
-        String codigo = "", descripcion = "";
-        if (c.moveToFirst()) {
-            //Recorremos todos los registros que esten en el cursor
-            do {
-                codigo = c.getString(1);
-                descripcion = c.getString(2);
-                item.add(codigo + " " + descripcion);
-            } while (c.moveToNext());
-        }
-        //Creamos un adaptador de tipo Array adapter
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, item);
-        ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, item);
-        lista.setAdapter(ad);
-        lista.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-    }
-
 
     public void informationImeiFunction(View view) {
         String mensaje = "IMEI \r\r\r\r\r\r\r\r\r\r\r: " + manager.getDeviceId().toString() + "\n" +
@@ -88,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void validarAccesoFunction(View v) {
-        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+        Intent intent = new Intent(MainActivity.this, ListviewActivity.class);
         startActivity(intent);
         finish();
     }

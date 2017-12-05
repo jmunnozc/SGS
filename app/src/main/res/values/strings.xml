@@ -18,4 +18,6 @@
     <string name="comentario">Comentario:</string>
 
     <string name="action_listDatos">Listar Datos</string>
+
+    <string name="ordenes">Ordenes de Servicio / Inspección:</string>
 </resources>

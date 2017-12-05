@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_ingresosalida"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_alarm_on_black_24dp"
             android:title="Inicio/Fin Actividades" />
         <item
             android:id="@+id/nav_listatareas"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
             android:title="Reporte" />
         <item
             android:id="@+id/nav_rendiciongastos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_attach_money_black_24dp"
             android:title="Rendición Gastos" />
     </group>
 
@@ -20,7 +20,7 @@
         <menu>
             <item
                 android:id="@+id/nav_salir"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_power_settings_new_black_48dp"
                 android:title="Salir" />
         </menu>
     </item>

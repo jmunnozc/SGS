@@ -1,11 +1,13 @@
 package pe.com.sgs.appsgs;
 
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,12 +17,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
                 FragmentIngresosalida.OnFragmentInteractionListener,
                 FragmentListartareas.OnFragmentInteractionListener,
                 FragmentRendiciongastos.OnFragmentInteractionListener{
+
+    SharedPreferences settings;
+    TextView tvTitulo, tvSubTitulo;
+
+    String codigoOrden;
+    String descripcionOrden;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +55,17 @@ public class MenuActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View headerLayout = navigationView.inflateHeaderView(R.layout.nav_header_menu);
+        tvTitulo = (TextView) headerLayout.findViewById(R.id.tvTitulo);
+        tvSubTitulo = (TextView) headerLayout.findViewById(R.id.tvSubTitulo);
+
+        settings = getSharedPreferences("ValorLogin", 0);
+        codigoOrden = settings.getString("codigoOrden", null);
+        descripcionOrden = settings.getString("descripcionOrden", null);
+
+        tvTitulo.setText(codigoOrden);
+        tvSubTitulo.setText(descripcionOrden);
     }
 
     @Override
