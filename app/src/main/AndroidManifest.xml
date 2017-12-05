@@ -23,7 +23,10 @@
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RadioActivity" />
-        <activity android:name=".ListviewActivity"></activity>
+        <activity android:name=".ListviewActivity" />
+        <activity android:name=".ActividadesActivity" />
+        <activity android:name=".ReporteActivity" />
+        <activity android:name=".RendicionGastosActivity"></activity>
     </application>
 
 </manifest>

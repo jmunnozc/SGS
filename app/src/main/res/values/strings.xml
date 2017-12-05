@@ -20,4 +20,10 @@
     <string name="action_listDatos">Listar Datos</string>
 
     <string name="ordenes">Ordenes de Servicio / Inspección:</string>
+
+    <string name="title_entry_1">Actividades</string>
+    <string name="title_entry_2">Reporte</string>
+    <string name="title_entry_3">Gastos</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+
 </resources>

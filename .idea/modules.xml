@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:\tools\PROYECTOS\Android\STUDIO\SGS\AppSgs.iml" filepath="D:\tools\PROYECTOS\Android\STUDIO\SGS\AppSgs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SGS.iml" filepath="$PROJECT_DIR$/.idea/SGS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\tools\PROYECTOS\Android\STUDIO\SGS\app\app.iml" filepath="D:\tools\PROYECTOS\Android\STUDIO\SGS\app\app.iml" />
     </modules>
   </component>
 </project>

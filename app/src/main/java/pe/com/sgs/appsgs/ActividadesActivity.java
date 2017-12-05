@@ -1,6 +1,7 @@
 package pe.com.sgs.appsgs;
 
 import android.content.SharedPreferences;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -9,10 +10,9 @@ import android.view.MenuItem;
 import com.oprisnik.navdrawer.entry.NavDrawerEntry;
 
 import pe.com.sgs.appsgs.dao.SQLController;
-
 import pe.com.sgs.appsgs.util.BaseDrawerActivity;
 
-public class MenuActivity extends BaseDrawerActivity {
+public class ActividadesActivity extends BaseDrawerActivity {
 
     SQLController sqlcon;
     SharedPreferences settings;
@@ -20,7 +20,7 @@ public class MenuActivity extends BaseDrawerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_actividades);
 
         overridePendingTransition(0, 0);
 
@@ -33,9 +33,9 @@ public class MenuActivity extends BaseDrawerActivity {
         if (tb != null) {
             setSupportActionBar(tb);
         }
-
         // we do not want the up arrow (<-) here
         showUpNavigation(false);
+
     }
 
     @Override
@@ -47,15 +47,7 @@ public class MenuActivity extends BaseDrawerActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        /*
-        sqlcon.open();
-        pendientes = sqlcon.buscarRespuestasCabeceraPendientesSincronizacion(settings.getString(Constantes.CODIGO_DISPOSITIVO, null));
-        sqlcon.close();
 
-        if(pendientes.size() > 0) {
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-        }
-        */
         return true;
     }
 
@@ -65,18 +57,6 @@ public class MenuActivity extends BaseDrawerActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        /*
-        if (id == R.id.menuScrinonizar) {
-
-            if (Util.isOnline(MenuActivity.this)) {
-                startService(new Intent(getBaseContext(), Servicio.class));
-            }
-
-            return true;
-
-        }
-        */
 
         return super.onOptionsItemSelected(item);
 

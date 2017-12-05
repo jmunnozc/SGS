@@ -2,7 +2,6 @@ package pe.com.sgs.appsgs;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 import java.util.List;
 
-import pe.com.sgs.appsgs.dao.MyDbHelper;
 import pe.com.sgs.appsgs.dao.SQLController;
 import pe.com.sgs.appsgs.model.Orden;
 
