@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppSgs</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="listado_tarea_fragment">Listado de Tareas Asignadas</string>
+    <string name="rendicion_gasto_fragment">Rendición de Gastos</string>
+    <string name="tipo_documento_fragment">Tipo de documento:</string>
+    <string name="categoria_documento_fragment">Categoría de documento:</string>
+    <string name="monto_documento_fragment">Monto de documento:</string>
+    <string name="fecha_documento_fragment">Fecha de documento:</string>
+    <string name="comentario">Comentario:</string>
+
+    <string name="action_listDatos">Listar Datos</string>
+</resources>

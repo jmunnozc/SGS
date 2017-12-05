@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ingresosalida"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Inicio/Fin Actividades" />
+        <item
+            android:id="@+id/nav_listatareas"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Reporte" />
+        <item
+            android:id="@+id/nav_rendiciongastos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Rendición Gastos" />
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

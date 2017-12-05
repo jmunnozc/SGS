@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pe.com.sgs.appsgs.FragmentIngresosalida">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker" />
+
+    <Button
+        android:text="Iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIniciar"
+        android:layout_gravity="bottom|fill_horizontal"
+        android:shadowColor="@color/colorIniciaTrabajo"
+        />
+
+    <Button
+        android:text="Terminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTerminar"
+        android:layout_gravity="bottom|right"
+        android:shadowColor="@color/colorTerminaTrabajo"
+        />
+</FrameLayout>
