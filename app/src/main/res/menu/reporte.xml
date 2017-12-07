@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.com.pension65.ayza.activity.RegistroActivity" >
+
+    <item
+        android:id="@+id/menu_gps"
+        android:icon="@drawable/gps_inactivo_48x48"
+        android:orderInCategory="7"
+        android:title="@string/gps"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menu_guardar"
+        android:icon="@drawable/save_48x48"
+        android:orderInCategory="6"
+        android:title="@string/guardar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_retornar"
+        android:orderInCategory="5"
+        android:icon="@drawable/return_48x48"
+        android:title="@string/retornar"
+        app:showAsAction="always" />
+    
+</menu>

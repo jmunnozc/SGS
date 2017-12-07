@@ -5,49 +5,15 @@ public class Constantes {
 	//SERVICIOS REST
 	
 	//public static final String REST_URL								= "http://192.168.30.53:8080/";			//PRUEBAS
-	public static final String REST_URL		 							= "http://m.pension65.gob.pe:8080/";
-	public static final String REST_USUARIOS_IMEI   					= REST_URL + "RSAyza/usuarios.json";
-	public static final String REST_VERSION 							= REST_URL + "RSAyza/version.json";
-	public static final String REST_TIPO_CONDICION 						= REST_URL + "RSAyza/tipoCondicion.json";
-	public static final String REST_GRABAR_VISITA 						= REST_URL + "RSAyza/grabarVisita.json";
-	public static final String REST_UBIGEO 								= REST_URL + "RSAyza/ubigeo.json";
-	public static final String REST_ASISTENCIA_TECNICA					= REST_URL + "RSAyza/asistenciaTecnica.json";
-	public static final String REST_CAMPANIA_SALUD						= REST_URL + "RSAyza/campaniaSalud.json";
-	public static final String REST_LOCAL_PAGO							= REST_URL + "RSAyza/localPago.json";
-	public static final String REST_MODALIDAD_PAGO						= REST_URL + "RSAyza/modalidadPago.json";
-	public static final String REST_CRONOGRAMA_PAGO						= REST_URL + "RSAyza/cronogramaPago.json";
-	public static final String REST_PUNTO_PAGO							= REST_URL + "RSAyza/puntoPago.json";
-	public static final String REST_TIPO_DISCAPACIDAD					= REST_URL + "RSAyza/tipoDiscapacidad.json";
-	public static final String REST_TIPO_CONCEPTO						= REST_URL + "RSGeneral/concepto.json";
-	public static final String REST_GRABAR_HOGAR						= REST_URL + "RSGeneral/grabarHogar.json";
-	public static final String REST_SABERES_TIPOLOGIA					= REST_URL + "RSAyza/saberesTipologia.json";
-	public static final String REST_GRABAR_SABERES						= REST_URL + "RSAyza/grabarSaberes.json";
-	public static final String REST_GRABAR_SABERES_PRODUCTIVOS			= REST_URL + "RSAyza/grabarSaberesProductivos.json";
-	public static final String REST_GRABAR_REPORTE_SABERES_PRODUCTIVOS	= REST_URL + "RSAyza/grabarReporteSaberesProductivos.json";
-	public static final String REST_SABERES_TEMA						= REST_URL + "RSAyza/tema.json";
-	public static final String REST_SABERES_NIVEL						= REST_URL + "RSAyza/nivel.json";
-	public static final String REST_SABERES_GRADO						= REST_URL + "RSAyza/grado.json";
-	public static final String REST_TIPO_DISCAPACIDAD_SABERES			= REST_URL + "RSAyza/tipoDiscapacidadSaberes.json";
-	public static final String REST_SABERES_SUB_TEMA					= REST_URL + "RSAyza/subTema.json";
-	public static final String REST_SABERES_SUB_TIPOLOGIA				= REST_URL + "RSAyza/subTipologia.json";
-	public static final String REST_TIPO_CAMPANIA						= REST_URL + "RSAyza/tipoCampania.json";
-	public static final String REST_GRABAR_CAMPANIA_SALUD				= REST_URL + "RSAyza/grabarCampaniaSalud.json";
-
-	/*REPORTE CONSOLIDADO INDIVIDUAL*/
-	public static final String REST_RC_VERIFICACIONES					= REST_URL + "RSAyza/reporteConsolidadoVerificaciones.json";
-	public static final String REST_RC_CONSULTA_SISFOH					= REST_URL + "RSAyza/reporteConsultaSisfoh.json";
-	public static final String REST_RC_DDJJ								= REST_URL + "RSAyza/reporteConsolidadoDeclaracionesJuradas.json";
-	public static final String REST_RC_PAGADURIAS						= REST_URL + "RSAyza/reporteConsolidadoHistoricoPagaduria.json";
-	public static final String REST_RC_CAMBIO_CONDICION					= REST_URL + "RSAyza/reporteConsolidadoHistoricoCambioCondicion.json";
-	public static final String REST_RC_REFERENCIA_SISFOH				= REST_URL + "RSAyza/reporteConsolidadoReferenciaSisfoh.json";
-	public static final String REST_RC_COTEJO_MASIVOS					= REST_URL + "RSAyza/reporteConsolidadoCotejoMasivos.json";
-	public static final String REST_RC_REEVALUACION						= REST_URL + "RSAyza/reporteConsolidadoReevaluacion.json";
-	public static final String REST_RC_CUENTAS_VIGILADAS				= REST_URL + "RSAyza/reporteConsolidadoCuentasVigiladas.json";
+	public static final String REST_URL		 							= "http://192.168.30.80:8080/";
+	public static final String REST_GRABAR								= REST_URL + "RestSGS/services/sincronizacion/grabaSincronizacion";
+	public static final String REST_VALIDAR_USUARIO						= REST_URL + "RestSGS/services/login/validaUsuario";
+	public static final String REST_LISTA_TAREA							= REST_URL + "RestSGS/services/tarea/listaTarea";
+	public static final String REST_LISTA_ORDEN							= REST_URL + "RestSGS/services/orden/listaOrden";
 	
 	
 	public static final String MAC_ADDRESS 								= "MAC ADDRESS : ";
 	public static final String IMEI 									= "IMEI : ";
-	public static final String MENSAJE 									= "mensaje";
 	public static final String USUARIO_INCORRECTO 						= "Usuario o Clave Incorrecta.";
 	public static final String SELECCIONAR_ALTERNATIVA 					= "Seleccionar una alternativa.";
 	public static final String SELECCIONAR_ALTERNATIVAS 				= "Seleccionar una o mas alternativas.";
@@ -446,4 +412,9 @@ public class Constantes {
 	public static final String MENSAJE_SP_MES_REPORTE					= "Mes Reporte";
 	
 	public static final String AGREGAR_NUEVO_NO = "No se puede registrar un nuevo participante porque ya agrego a uno.";
+
+	public static final String SALIR_REPORTE 							= "Desea salir del reporte?";
+	public static final String SALIR_ACTIVIDAD 							= "Desea salir del registro de actividad?";
+	public static final String SALIR_RENDICION 							= "Desea salir del registro de rendición de gastos?";
+	public static final String MENSAJE		 							= "Mensaje";
 }

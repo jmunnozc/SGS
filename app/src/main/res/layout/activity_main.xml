@@ -11,6 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context="pe.com.sgs.appsgs.MainActivity">
 
     <ImageView
@@ -39,7 +40,6 @@
         android:text="Iniciar"
         android:layout_gravity="center"
         android:id="@+id/btn_iniciar"
-        android:onClick="validarAccesoFunction"
         />
     <!--TextView
         android:layout_width="wrap_content"

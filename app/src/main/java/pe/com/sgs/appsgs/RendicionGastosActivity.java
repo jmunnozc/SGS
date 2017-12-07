@@ -3,6 +3,7 @@ package pe.com.sgs.appsgs;
 import android.Manifest;
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -21,6 +22,7 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import com.oprisnik.navdrawer.entry.NavDrawerEntry;
+import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -241,6 +243,25 @@ public class RendicionGastosActivity extends BaseDrawerActivity {
 
             return true;
 
+        }else if(id == R.id.menu_retornar){
+
+            new LovelyStandardDialog(this)
+                    .setTopColorRes(R.color.colorPrincipal)
+                    .setButtonsColorRes(R.color.colorPrincipal)
+                    .setIcon(R.drawable.info_48x48)
+                    .setTitle(Constantes.MENSAJE)
+                    .setMessage(Constantes.SALIR_RENDICION)
+                    .setPositiveButton(R.string.si, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                            Intent intent = new Intent(RendicionGastosActivity.this, ListviewActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    })
+                    .setNegativeButton(R.string.no, null)
+                    .show();
         }
 
         return super.onOptionsItemSelected(item);
