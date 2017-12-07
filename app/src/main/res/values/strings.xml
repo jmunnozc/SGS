@@ -26,4 +26,14 @@
     <string name="title_entry_3">Gastos</string>
     <string name="cerrarSesion">Cerrar Sesión</string>
 
+    <string name="ingresarDocumento">Ingresar Documento</string>
+    <string name="tipoDocumento"><b>Tipo de Documento</b></string>
+    <string name="categoriaDocumento"><b>Categoria Documento</b></string>
+    <string name="montoDocumento"><b>Monto Documento</b></string>
+    <string name="fechaEmision"><b>Fecha Emisión</b></string>
+
+    <string name="gps">GPS</string>
+    <string name="guardar">Grabar</string>
+    <string name="retornar">Retornar</string>
+
 </resources>

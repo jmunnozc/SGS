@@ -22,19 +22,89 @@ tools:context="pe.com.sgs.appsgs.RendicionGastosActivity">
         tb:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         tb:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
+    <TextView
+        android:id="@+id/tvIngresarDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ingresarDocumento"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTipoDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/tipoDocumento"
+        android:layout_marginTop="50dp"/>
+
     <Spinner
         android:id="@+id/spTipoDocumento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvCategoriaDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/categoriaDocumento"
+        android:layout_marginTop="20dp"/>
 
     <Spinner
         android:id="@+id/spCategoriaDocumento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="80dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/montoDocumento"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/fechaEmision"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:enabled="false" />
+
+        <ImageButton
+            android:id="@+id/imgbtnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/calendar_48x48" />
+
+    </LinearLayout>
 
 </LinearLayout>
 
